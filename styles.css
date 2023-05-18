@@ -1,0 +1,464 @@
+:root{
+    --color-grey : rgba(103, 103, 103, 0.2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body{
+    margin: 0 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav{
+    color: white;
+    display: flex;
+    flex-direction : column;
+    height: 100vh;
+    width: 3rem;
+    flex-wrap: wrap;
+}
+
+
+
+a.nav-element{
+    text-decoration : none;
+    display : flex;
+    align-items:  center;
+    justify-content: flex-start;
+    color : white;
+    margin-top: 0.2rem;
+}
+
+a.nav-element i{
+    border-radius: 50%;
+    padding : 0.5rem;
+    margin-right : 0.4rem;
+    transition : 0.15s background-color ease;
+    font-size : 29px;
+    cursor: pointer;
+
+    
+}
+
+
+/* a.others{
+    margin-top: 1.5rem ;
+} */
+
+a.nav-element#logo{
+    margin-bottom : 0.2rem;
+
+    /* padding: 20px !important;  ???? */
+}
+
+a.nav-element i:hover{
+    background-color : var(--color-grey);
+}
+
+a#edit{
+    text-decoration : none;
+    display : flex;
+    align-items:  center;
+    justify-content: flex-start;
+    color : white;
+    margin-top: 1.1rem;
+}
+a#edit i{
+    border-radius: 50%;
+    padding : 0.7rem;
+    margin-right : 0.4rem;
+    transition : 0.15s background-color ease;
+    font-size : 29px;  
+    background-color: rgb(12, 138, 188);
+    cursor: pointer;
+
+}
+  
+a#edit i:hover{
+    background-color: rgb(2, 94, 137);
+}
+
+a#account{
+    margin-top: 3.5rem;
+}
+a#account img{
+    height: 50px;
+    width: 50px;
+}
+main{
+    color: rgba(255, 253, 253, 0.887);
+    width: 550px;
+    height: 100vh;
+    margin-top: 0px;
+    margin-left: 28px;
+}
+nav main .up-section{
+    border: solid rgba(255,255,255, 0.5);
+    border-width: 0.03rem;
+    padding-left: 1rem;
+    padding-right: 1rem; /* align em verticlement avec space between */
+    padding-top: 1rem;
+}
+nav main .home{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav main .write{
+    display: flex;
+    align-items: center;
+}
+nav main .write span{
+    text-decoration: none;
+    color: aliceblue;
+    opacity: 0.2;
+    font-size: 26px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+
+}
+nav main .home a{
+    color: aliceblue;
+    text-decoration: none;
+}
+main p{
+    font-weight: 600;
+    font-size: 20px; 
+}
+main .up-section a img{
+    height: 50px;
+    width: 50px;
+    margin-top: 1.5rem; /* whyy replace margin with padding and u'll see*/
+}
+main .icones{
+    margin-top: 1.7rem;
+    padding-left: 2rem; 
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+main .icones a i{
+    color: rgb(12, 138, 188);
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 50px;
+    transition: 0.15s background-color ease;
+}
+
+main .icones .tweet{
+    text-decoration: none;
+    color: aliceblue;
+    background: rgb(12, 138, 188);
+    border-radius: 50px;
+    padding: 0.6rem 0.96rem;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-left: 12rem;
+}
+main .icones a i:hover{
+    background-color: rgba(3, 96, 133,0.2)
+}
+
+.mid-section{
+    border: solid rgba(255,255,255, 0.5);
+    border-width: 0.03rem;
+    border-top: none;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.mid-section a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    transition: 0.15s background-color ease;
+    padding: 1.1rem 13.2rem;
+    /* width: 100%; whyy is it not working?? */
+}
+
+.mid-section a:hover{
+    background-color: rgba(211, 211, 211, 0.2); /*WTFF */
+}
+
+.source{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content{
+    padding:0.5rem 1.1rem ;
+    border-top: none;
+    border: solid rgba(255,255,255, 0.5);
+    border-width: 0.03rem;
+    cursor: pointer;
+}
+.content .newspaper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .source a{
+    padding: 0.2rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+.content .newspaper a span{
+    font-weight: 600;
+}
+.content .newspaper p{
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 0.3rem;
+}
+.newspaper .light{
+    opacity: 0.4;
+}
+
+.content .newspaper a img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+.source .more i{
+    transition: 0.15s ease;
+    padding: 0.4rem;
+    border-radius: 50px;
+}
+.source .more  i:hover{
+    color: rgb(54, 163, 210);
+    background-color: rgba(3, 96, 133,0.2)
+}
+.topic{
+    border-radius: 20px;
+    border: solid rgba(255,255,255, 0.2);
+    border-width: 0.02rem;
+    display: flex;
+    margin: 0.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topic p {
+    border-radius: 0 0 20px 20px;
+    opacity: 0.4;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.topic .infos{
+    padding: 1rem 1rem 0 1rem;
+}
+.topic .infos h3{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.topic .infos h8{
+    opacity: 0.4;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.topic img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+
+}
+.react{
+    padding-left: 1rem;
+}
+.react a i{
+    color:rgba(255,255,255, 0.2) ;
+    margin-left:4rem;
+    text-decoration: none
+}
+.react a.file_upload i{
+    border-radius: 50px;
+    transition: 0.15s background-color ease;
+    padding: 0.4rem 0.5rem;
+}
+.react a.file_upload i:hover{
+    color: rgb(0, 187, 255);
+    background-color: rgba(135,206,235,0.3);
+}
+
+
+
+.react a.send i{
+    border-radius: 50px;
+    transition: 0.15s background-color ease;
+    padding: 0.4rem 0.5rem;
+}
+.react a.send i:hover{
+    color: rgb(38, 122, 61);
+    background-color: rgba(84, 145, 102, 0.3);
+}
+
+.react a.favorite i{
+    border-radius: 50px;
+    transition: 0.15s background-color ease;
+    padding: 0.4rem 0.5rem;
+}
+.react a.favorite i:hover{
+    color: rgb(212, 0, 255);
+    background-color: rgba(168, 75, 171, 0.3);
+}
+
+.react a.chat_bubble i{
+    border-radius: 50px;
+    transition: 0.15s background-color ease;
+    padding: 0.4rem 0.5rem;
+}
+.react a.chat_bubble i:hover{
+    color: rgb(0, 187, 255);
+    background-color: rgba(135,206,235,0.3);
+}
+.inside{
+    transition: 0.2s ease;
+}
+.inside:hover{
+    opacity: 0.7;
+}
+
+aside{
+    margin: 0.6rem 2rem;
+}
+aside .search-section{
+    display: flex;
+    align-items: center;
+}
+
+aside form input{
+    color: aliceblue;
+    padding: 0.698rem 9rem 0.698rem 0.2rem;
+    border-radius: 0 60px 60px 0;
+    background-color: rgba(97, 95, 95, 0.459);
+    border: none;
+    
+}
+aside .search-section i{
+    background-color: rgba(97, 95, 95, 0.459);
+    border-radius: 60px 0px 0px 60px;
+    padding: 0.435rem 0.4rem 0.44rem 0.9rem;
+}
+
+.trends-for-you{
+    margin-top: 1.5rem;
+}
+.trends-for-you .top{
+    display: flex;
+    justify-content: space-between;
+}
+.trends-for-you .trends .top a i{
+    color: grey;
+    border-radius: 50px;
+    padding: 0.2rem;
+    transition: 0.15s background-color ease;
+}
+.trends-for-you .trends .top a i:hover{
+    background-color: var(--color-grey);
+}
+.trends-for-you .trends .top p{
+    color: grey;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.trends{
+    margin-top: 1.4rem;
+}
+
+.trends-for-you h3{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.8rem;
+}
+.trends-for-you .trends span{
+    color: aliceblue;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+}
+
+
+.more a{
+    margin-top: 1.2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(74, 185, 254);
+    font-weight: 200;
+    transition: 0.15s background-color ease;
+    padding: 1rem 15rem 1rem 0.7rem;
+    border-radius: 0 0 40px 40px;
+    background-color: var(--color-grey);
+
+}
+.trends-for-you .more a:hover{
+    background-color: rgba(43, 43, 43, 0.579);
+}
+
+.follow{
+    margin-top: 1.5rem;
+}
+.follow .acc{
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+.follow .acc a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.61);
+}
+.follow .acc .name{
+    margin-left: 1.1rem;
+
+}
+.follow .acc .name p{
+    color: grey;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 0.3rem;  
+}
+
+.follow .acc .button{
+    margin-left: 7rem;
+    background-color: var(--color-grey);
+    padding: 1rem;
+    border-radius: 40px;
+    transition: 0.15s background-color ease;
+}
+.follow .acc .button:hover{
+    background-color: rgba(43, 43, 43, 0.579);
+
+}
+.follow .acc img{
+    border-radius: 50px;
+    max-width: 60px;
+    height: 40px;
+}
+
+/* .follow{
+    background-color: aqua !important;
+}
+.follow .acc{
+    background-color: aqua;
+}
+.follow .name{
+    background-color: aqua;
+} */
